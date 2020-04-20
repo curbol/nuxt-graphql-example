@@ -1,0 +1,25 @@
+html {
+  overflow-y: auto !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s ease;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+
+.theme--dark.v-application {
+  background-color: var(--v-app-darken4) !important;
+}
+
+.theme--dark.v-card {
+  background-color: var(--v-app-darken3) !important;
+}
+
+.theme--dark.v-select-list {
+  background-color: var(--v-app-darken2) !important;
+}
