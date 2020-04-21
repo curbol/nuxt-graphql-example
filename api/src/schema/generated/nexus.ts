@@ -101,6 +101,7 @@ export interface NexusGenFieldTypes {
   }
   Query: { // field return type
     people: NexusGenRootTypes['Person'][]; // [Person!]!
+    random: number; // Float!
   }
 }
 

@@ -10,6 +10,12 @@ const Query = extendType({
   type: 'Query',
   definition(t) {
     t.crud.people(defaultOptions)
+    t.float('random', {
+      description: 'Random number',
+      resolve(root, args, ctx) {
+        return Math.random()
+      },
+    })
   },
 })
 
